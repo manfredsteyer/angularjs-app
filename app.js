@@ -22,7 +22,7 @@ angular.module('app', []).component('helloComponent', {
 export class MfeAngularJs extends HTMLElement {
   connectedCallback() {
     const root = document.createElement('hello-component');
-    document.body.appendChild(root);
+    this.appendChild(root);
     angular.bootstrap(root, ['app']);
   }
 }
