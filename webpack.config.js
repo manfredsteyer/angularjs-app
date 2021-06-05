@@ -7,7 +7,7 @@ module.exports = options => {
     output: {
       filename: 'bundle.js',
       publicPath: "auto",
-      uniqueName: "mfe_angularjs"
+      uniqueName: "angularjs"
     },
     optimization: {
       moduleIds: 'named',
@@ -34,8 +34,8 @@ module.exports = options => {
       new ModuleFederationPlugin({
         
           // For remotes (please adjust)
-          name: "mfe_angularjs",
-          library: { type: "var", name: "mfe_angularjs" },
+          name: "angularjs",
+          library: { type: "var", name: "angularjs" },
           filename: "remoteEntry.js",
           exposes: {
               './web-components': './app.js',
