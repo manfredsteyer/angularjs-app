@@ -2,7 +2,7 @@ import angular from 'angular';
 
 angular.module('app', []).component('helloComponent', { 
   controller: function () {
-    this.message = 'AngularJS!';
+    this.message = 'AngularJS';
     this.version = require('./package.json').dependencies.angular;
   },
   template: `
